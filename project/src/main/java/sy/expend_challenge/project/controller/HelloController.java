@@ -9,8 +9,20 @@ public class HelloController {
     // test print
     @RequestMapping("/")
     public String hello() {
-        System.out.println("Hello Boot!");
-        return "hello";
+        //System.out.println("Hello Boot!");
+        return "challenge/challengeList";
+    }
+    
+    @RequestMapping("/test")
+    public String test() {
+        //System.out.println("Hello Boot!");
+        return "challenge/challengeDetail";
+    }
+    
+    @RequestMapping("/open")
+    public String open() {
+        //System.out.println("Hello Boot!");
+        return "challenge/challengeOpen";
     }
 
 
