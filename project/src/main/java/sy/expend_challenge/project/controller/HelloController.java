@@ -24,6 +24,4 @@ public class HelloController {
         //System.out.println("Hello Boot!");
         return "challenge/challengeOpen";
     }
-
-
 }
