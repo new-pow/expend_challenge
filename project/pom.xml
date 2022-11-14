@@ -16,6 +16,8 @@
 	<description>toy project by Saehim and Yerin.</description>
 	<properties>
 		<java.version>11</java.version>
+		
+		
 	</properties>
 	<dependencies>
 		<dependency>
@@ -63,6 +65,21 @@
 			<groupId>org.apache.tomcat.embed</groupId>
 			<artifactId>tomcat-embed-jasper</artifactId>
 		</dependency>
+		
+		<!-- 내가 그냥 추가 -->
+		<!-- jpa -->
+		<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+		
+		<!-- test -->
+		<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        
 
 	</dependencies>
 
