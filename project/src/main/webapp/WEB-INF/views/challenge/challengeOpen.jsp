@@ -55,7 +55,7 @@
                     <!-- Contact form-->
                     <div class="bg-light rounded-3 py-5 px-4 px-md-5 mb-5">
                         <div class="text-center mb-5">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><img src="<c:url value='/image/profile2.png' />" /></div>
                             <h1 class="fw-bolder">챌린지 생성</h1>
                             <p class="lead fw-normal text-muted mb-0">참여하고 싶은 챌린지를 개설해보세요!</p>
                         </div>
@@ -71,28 +71,35 @@
                                 <form id="contactForm" data-sb-form-api-token="API_TOKEN">
                                     <!-- Name input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                        <input class="form-control" id="name" type="text" placeholder="챌린지 이름" data-sb-validations="required" />
                                         <label for="name">챌린지 이름</label>
-                                        <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                                        <div class="invalid-feedback" data-sb-feedback="name:required">챌린지 이름을 입력하세요.</div>
                                     </div>
                                     <!-- Email address input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                        <input class="form-control" id="term" type="text" placeholder="총 기간" data-sb-validations="required" />
                                         <label for="email">총 기간</label>
-                                        <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                        <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                                        <div class="invalid-feedback" data-sb-feedback="email:required">챌린지 총 기간을 입력하세요.</div>
+                                        <div class="invalid-feedback" data-sb-feedback="email:email">예) 30일</div>
+                                    </div>
+                                    <!-- Email address input-->
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="detailterm" type="text" placeholder="세부 기간" data-sb-validations="required" />
+                                        <label for="email">세부 기간</label>
+                                        <div class="invalid-feedback" data-sb-feedback="email:required">챌린지 세부 기간을 입력하세요.</div>
+                                        <div class="invalid-feedback" data-sb-feedback="email:email">예) 7일</div>
                                     </div>
                                     <!-- Phone number input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                        <input class="form-control" id="money" type="text" placeholder="목표 금액" data-sb-validations="required" />
                                         <label for="phone">목표 금액</label>
-                                        <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                                        <div class="invalid-feedback" data-sb-feedback="phone:required">챌린지 목표 금액을 입력하세요.</div>
                                     </div>
                                     <!-- Message input-->
                                     <div class="form-floating mb-3">
-                                        <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                        <textarea class="form-control" id="rules" type="text" placeholder="세부 내용 & 규칙 생성" style="height: 10rem" data-sb-validations="required"></textarea>
                                         <label for="message">세부 내용 & 규칙 생성</label>
-                                        <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                                        <div class="invalid-feedback" data-sb-feedback="message:required">챌린지 규칙과 세부 내용을 생성하세요!</div>
                                     </div>
                                     <!-- Submit success message-->
                                     <!---->
@@ -118,7 +125,7 @@
                         </div>
                     </div>
                     <!-- Contact cards-->
-                    <div class="row gx-5 row-cols-2 row-cols-lg-4 py-5">
+                    <!-- <div class="row gx-5 row-cols-2 row-cols-lg-4 py-5">
                         <div class="col">
                             <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-chat-dots"></i></div>
                             <div class="h5 mb-2">Chat with us</div>
@@ -139,11 +146,11 @@
                             <div class="h5">Call us</div>
                             <p class="text-muted mb-0">Call us during normal business hours at (555) 892-9403.</p>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </section>
         </main>
-        <!-- Footer-->
+        <!-- <!-- Footer
         <footer class="bg-dark py-4 mt-auto">
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
@@ -157,7 +164,7 @@
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer> --> -->
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->

@@ -1,6 +1,7 @@
 package sy.expend_challenge.project.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -13,8 +14,8 @@ public class HelloController {
         return "challenge/challengeList";
     }
     
-    @RequestMapping("/test")
-    public String test() {
+    @RequestMapping("/detail")
+    public String detail() {
         //System.out.println("Hello Boot!");
         return "challenge/challengeDetail";
     }
@@ -24,6 +25,4 @@ public class HelloController {
         //System.out.println("Hello Boot!");
         return "challenge/challengeOpen";
     }
-
-
 }

@@ -22,7 +22,7 @@
             <!-- Navigation-->
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container px-5">
-                    <a class="navbar-brand" href="index.html">환멸의 계곡</a>
+                    <a class="navbar-brand" href="index.html">자린🍊비</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -63,7 +63,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="http://cdn.bizwatch.co.kr/news/photo/2022/08/12/79200cde6ee23371592e61c467c690cd.jpg" alt="..." /></div>
+                        <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="<c:url value='/image/sample1.png' />" alt="..." /></div>
                     </div>
                 </div>
             </header>
@@ -71,16 +71,16 @@
             <section class="py-5" id="features">
                 <div class="container px-5 my-5">
                     <div class="row gx-5">
-                        <div class="col-lg-4 mb-5 mb-lg-0"><h2 class="fw-bolder mb-0">소비 인증(누르면 그사람 가계부로 이동)</h2></div>
+                        <div class="col-lg-4 mb-5 mb-lg-0"><h2 class="fw-bolder mb-0">소비 인증</h2><h4 class="fw-bolder mb-0">(클릭시 참여자 가계부로 이동)</h4></div>
                         <div class="col-lg-8">
                             <div class="row gx-5 row-cols-1 row-cols-md-2">
                                 <div class="col mb-5 h-100">
-                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
+                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><img src="<c:url value='/image/profile.png' />" /></div>
                                     <h2 class="h5">새힘's 가계부</h2>
                                     <p class="mb-0">안녕하세요. 이번 주는 잘 지켰습니다.</p>
                                 </div>
                                 <div class="col mb-5 h-100">
-                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
+                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><img src="<c:url value='/image/profile.png' />" /></div>
                                     <h2 class="h5">예린's 가계부</h2>
                                     <p class="mb-0">이건희가 된 기분 좋네요.</p>
                                 </div>
@@ -105,13 +105,22 @@
                     <div class="row gx-5 justify-content-center">
                         <div class="col-lg-10 col-xl-7">
                             <div class="text-center">
-                                <div class="fs-4 mb-4 fst-italic">"Working with Start Bootstrap templates has saved me tons of development time when building new projects! Starting with a Bootstrap template just makes things easier!"</div>
+                                <div class="fs-4 mb-4 fst-italic">
+                                	기간: 30일<br>
+                                	세부 기간(단위): 7일<br>
+                                	목표 금액: 50,000원 / 7일<br>
+                                	<br>
+                                	규칙 1: 단위 기간 중 목표 금액을 초과할 시 경고 1회<br>
+                                	규칙 2: 경고 2회 시 챌린지 실패 (강제 퇴장)<br>
+                                	<br>
+                                	모두들 화이팅 해봅시다! 
+                                </div>
                                 <div class="d-flex align-items-center justify-content-center">
-                                    <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
+                                    <img class="rounded-circle me-3" src="<c:url value='/image/profile.png' />" alt="..." />
                                     <div class="fw-bold">
-                                        Tom Ato
+                                        방장
                                         <span class="fw-bold text-primary mx-1">/</span>
-                                        CEO, Pomodoro
+                                        새힘
                                     </div>
                                 </div>
                             </div>
@@ -196,7 +205,7 @@
                         </div>
                     </div>
                     <!-- Call to action-->
-                    <aside class="bg-primary bg-gradient rounded-3 p-4 p-sm-5 mt-5">
+                    <!-- <aside class="bg-primary bg-gradient rounded-3 p-4 p-sm-5 mt-5">
                         <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
                             <div class="mb-4 mb-xl-0">
                                 <div class="fs-3 fw-bold text-white">궁금한 걸 검색해보세용</div>
@@ -210,7 +219,7 @@
                                 <div class="small text-white-50">We care about privacy, and will never share your data.</div>
                             </div>
                         </div>
-                    </aside>
+                    </aside> -->
                 </div>
             </section>
         </main>

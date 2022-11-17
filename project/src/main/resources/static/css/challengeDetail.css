@@ -3029,14 +3029,14 @@ textarea.form-control-lg {
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  color: #000000;
+  background-color: #FFCC00;
+  border-color: #FFCC00;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #0b5ed7;
-  border-color: #0a58ca;
+  background-color: #FFCC00;
+  border-color: #FFCC00;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
@@ -3054,8 +3054,10 @@ textarea.form-control-lg {
 }
 .btn-primary:disabled, .btn-primary.disabled {
   color: #fff;
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  /* background-color: #0d6efd;
+  border-color: #0d6efd; */
+  background-color: #FE863A;
+  border-color: #FE863A;
 }
 
 .btn-secondary {
@@ -3420,11 +3422,11 @@ textarea.form-control-lg {
 
 .btn-outline-light {
   color: #f8f9fa;
-  border-color: #f8f9fa;
+  border-color: #FFCC00;
 }
 .btn-outline-light:hover {
   color: #000;
-  background-color: #f8f9fa;
+  background-color: #FFCC00;
   border-color: #f8f9fa;
 }
 .btn-check:focus + .btn-outline-light, .btn-outline-light:focus {
@@ -4473,13 +4475,13 @@ textarea.form-control-lg {
 }
 
 .navbar-dark .navbar-brand {
-  color: #fff;
+  color: #FFFFFF;
 }
 .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
   color: #fff;
 }
 .navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.55);
+  color: #FFFFFF;
 }
 .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
   color: rgba(255, 255, 255, 0.75);
@@ -7780,8 +7782,8 @@ textarea.form-control-lg {
 }
 
 .text-white-50 {
-  --bs-text-opacity: 1;
-  color: rgba(255, 255, 255, 0.5) !important;
+  /* --bs-text-opacity: 1; */
+  /* color: rgba(255, 255, 255, 0.5) !important; */
 }
 
 .text-reset {
@@ -7837,12 +7839,13 @@ textarea.form-control-lg {
 
 .bg-light {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+  /* background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important; */
+  background-color: rgba(254, 134, 58, 0.19);
 }
 
 .bg-dark {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #FE863A;
 }
 
 .bg-black {
