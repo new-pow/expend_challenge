@@ -1,2 +1,12 @@
-package sy.expend_challenge.project.controller;public class CashbookController {
+package sy.expend_challenge.project.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class CashbookController {
+    @RequestMapping("/my/week")
+    public String viewWeekly() {
+        return "cashbook/weekly";
+    }
 }
