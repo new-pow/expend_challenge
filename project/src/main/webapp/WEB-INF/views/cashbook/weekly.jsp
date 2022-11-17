@@ -16,6 +16,8 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="<c:url value='/css/challengeList.css' />" rel="stylesheet" />
+        <link href="<c:url value='/css/form.css' />" rel="stylesheet" />
+        <link rel="stylesheet" href="<c:url value="/css/style.css"/>">
 	</head>
 	<body>
 		<!-- Navigation-->
@@ -48,214 +50,150 @@
             </div>
         </nav>
         <!-- Header-->
-        <header class="bg-dark py-5">
+        <header class="py-5" style="background-color: coral">
             <div class="container px-4 px-lg-5 my-5">
                 <div class="text-center text-white">
-                    <h1 class="display-4 fw-bolder">소비 챌린지</h1>
-                    <p class="lead fw-normal text-white-50 mb-0">소비 습관 바로잡기!</p>
+                    <h1 class="display-4 fw-bolder">금주의 소비🍊</h1>
+                    <p class="lead fw-normal text-white-50 mb-0" style="color: black">이번주 소비를 확인해보세요!</p>
                 </div>
             </div>
         </header>
         <!-- Section-->
-        <section class="py-5">
-            <div class="container px-4 px-lg-5 mt-5">
-                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="<c:url value='/image/sample1.png' />" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">자린고비 자취생 챌린지</h5>
-                                    <!-- Product price-->
-                                    <p>기간 : 30일</p>
-                                    <p>일주일 5만원</p>
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">챌린지 상세보기</a></div>
-                            </div>
+        <section class="ftco-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="table-wrap">
+                            <table class="table table-bordered text-center">
+                                <thead>
+                                <tr>
+                                    <th>11/14 Mon</th>
+                                    <th>11/15 Tue</th>
+                                    <th>11/16 Wed</th>
+                                    <th>11/17 Thu</th>
+                                    <th>11/18 Fri</th>
+                                    <th>11/19 Sat</th>
+                                    <th>11/20 Sun</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="text-center"><div class="img rounded-circle mb-2" style="background-image: url(<c:url value="/image/sample4.png"/>);"></div>
+                                        <a href="#"><strong>10000</strong> <br>
+                                            <b>-10000</b></a>
+                                    </td>
+                                    <td class="text-center"><div class="img rounded-circle mb-2" style="background-image: url(<c:url value="/image/sample4.png"/>);"></div>
+                                        <a href="#"><strong>10000</strong> <br>
+                                            <b>-10000</b></a>
+                                    </td>
+                                    <td class="text-center"><div class="img rounded-circle mb-2" style="background-image: url(<c:url value="/image/sample4.png"/>);"></div>
+                                        <a href="#"><strong>10000</strong> <br>
+                                            <b>-10000</b></a>
+                                    </td>
+                                    <td class="text-center"><div class="img rounded-circle mb-2" style="background-image: url(<c:url value="#"/>);"></div>
+                                        <a href="#"><strong>10000</strong> <br>
+                                            <b>-50000</b></a>
+                                    </td>
+                                    <td class="text-center"><div class="img rounded-circle mb-2" style="background-image: url(<c:url value="/image/sample4.png"/>);"></div>
+                                        <a href="#"><strong>10000</strong> <br>
+                                            <b>-10000</b></a>
+                                    </td>
+                                    <td class="text-center"><div class="img rounded-circle mb-2" style="background-image: url(<c:url value="#"/>);"></div>
+                                        <a href="#"><strong></strong> <br>
+                                            <b></b></a>
+                                    </td>
+                                    <td class="text-center"><div class="img rounded-circle mb-2" style="background-image: url(<c:url value="#"/>);"></div>
+                                        <a href="#"><strong></strong> <br>
+                                            <b></b></a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                                <tfoot>
+                                <tr>
+                                    <th><a href="#"><i class="fa fa-long-arrow-left"></i> 이전 주간</a></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th><a href="#">다음 주간 <i class="fa fa-long-arrow-right"></i></a></th>
+                                </tr>
+                                </tfoot>
+                            </table>
                         </div>
                     </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">직장인</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="http://cdn.bizwatch.co.kr/news/photo/2022/08/12/79200cde6ee23371592e61c467c690cd.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">부르주아 이건희 챌린지</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    <!-- Product price-->
-                                    <p class="text-muted text-decoration-line-through">일주일 10만원</p>
-                                    <p>종료된 챌린지</p>
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">챌린지 상세보기</a></div>
-                            </div>
+                </div>
+            </div>
+        </section>
+        <%-- section --%>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="table-wrap">
+                            <table class="table table-bordered text-center">
+                                <tbody>
+                                <tr>
+                                    <td class="text-center">
+                                        <div class="rounded-circle mb-2" style="background-image: url(<c:url value="#"/>);">
+                                            11월 17일의 소비 내역을 입력해 주세요.
+                                        </div>
+                                        <div style="display: flex;">
+                                            <div style="width: 20%">
+                                                분류
+                                                <select>
+                                                    <option>수입</option>
+                                                    <option>지출</option>
+                                                </select>
+                                            </div>
+                                            <div style="width: 30%">
+                                                금액
+                                                <input type="number">
+                                            </div>
+                                            <div style="width: 50%">
+                                                내역
+                                                <input type="text" width="500px">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">대학생</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="<c:url value='/image/sample2.png' />" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Sale Item</h5>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$50.00</span>
-                                    $25.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">챌린지 상세보기</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="<c:url value='/image/sample3.png' />" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Popular Item</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    $40.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="<c:url value='/image/sample4.png' />" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Sale Item</h5>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$50.00</span>
-                                    $25.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Fancy Product</h5>
-                                    <!-- Product price-->
-                                    $120.00 - $280.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Special Item</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$20.00</span>
-                                    $18.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Popular Item</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    $40.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
-                            </div>
+                </div>
+            </div>
+        </section>
+        <%-- section --%>
+        <section class="ftco-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="table-wrap">
+                            <table class="table">
+                                <thead class="thead-dark">
+                                <tr>
+                                    <th>&nbsp;</th>
+                                    <th>분류</th>
+                                    <th>금액</th>
+                                    <th>내역</th>
+                                    <th>&nbsp;</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr class="alert" role="alert">
+                                    <th scope="row"></th>
+                                    <td>지출</td>
+                                    <td>3000</td>
+                                    <td>편의점 물 구입</td>
+                                    <td>
+                                        <a href="#" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true"><i class="fa fa-close"></i></span>
+                                        </a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -269,5 +207,8 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="<c:url value='/js/challengeList.js' />"></script>
+        <script src="<c:url value="/js/jquery.min.js"/>"></script>
+        <script src="<c:url value="/js/popper.js"/>"></script>
+        <script src="<c:url value="/js/main.js"/>"></script>
     </body>
 </html>
