@@ -25,4 +25,11 @@ public class HelloController {
         //System.out.println("Hello Boot!");
         return "challenge/challengeOpen";
     }
+    
+    // 월별 달력
+    @RequestMapping("/month")
+    public String month() {
+        return "cashbook/month";
+    }
+    
 }
