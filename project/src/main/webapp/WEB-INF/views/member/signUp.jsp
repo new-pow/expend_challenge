@@ -29,6 +29,7 @@
             <style>
                 .background-radial-gradient {
                     background-color: #FE863A;
+                    background-image:
                     url("image/orange-background.jpg");
                 }
 
@@ -76,7 +77,24 @@
 
                         <div class="card bg-glass">
                             <div class="card-body px-4 py-5 px-md-5">
-                                <form>
+                                <!-- <form action="/complete" method="post">
+								    <div>
+								        <label for="memId">아이디: </label>
+								        <input id="memId" name="memId" type="text">
+								    </div>
+								    <div>
+								        <label for="memPw">패스워드: </label>
+								        <input id="memPw" name="memPw" type="password">
+								    </div>
+								    <div>
+								        <label for="memName">닉네임: </label>
+								        <input id="memName" name="memName" type="text">
+								    </div>
+								 
+								    <input type="submit" value="가입하기">
+								</form> -->
+								
+								<form action="/complete" method="post">
                                     <!-- 2 column grid layout with text inputs for the first and last names -->
                                     <div class="row">
                                         <div class="col-md-6 mb-4">
@@ -149,6 +167,7 @@
                                         </button>
                                     </div>
                                 </form>
+								
                             </div>
                         </div>
                     </div>
@@ -156,11 +175,10 @@
             </div>
         </section>
         <!-- Section: Design Block -->
-
         <!-- Footer-->
         <c:import url="../rayout/footer.jsp" />
+        
     </main>
-
 
 </body>
 </html>
