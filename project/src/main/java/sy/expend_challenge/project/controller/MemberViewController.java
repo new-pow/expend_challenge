@@ -11,7 +11,7 @@ import sy.expend_challenge.project.domain.Member;
 import sy.expend_challenge.project.service.MemberService;
 
 @Controller
-public class MemberController {
+public class MemberViewController {
 
 	@Autowired
 	MemberService memberService;
