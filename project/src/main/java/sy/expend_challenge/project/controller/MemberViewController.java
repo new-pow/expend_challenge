@@ -16,21 +16,6 @@ public class MemberViewController {
 	@Autowired
 	MemberService memberService;
 
-	@RequestMapping("/join")
-	public String showJoinForm() {
-		return "member/Join";
-	}
-
-	/*
-	 * @RequestMapping("/join/complete") public String showJoinComplete() { return
-	 * "member/JoinComplete"; }
-	 */
-
-	/*
-	 * @RequestMapping("/login") public String showLoginForm() { return
-	 * "member/Login"; }
-	 */
-
 	// ////////////////////////////////////////////////////////////////
 	// 회원가입 test
 	@GetMapping("/signUp")
