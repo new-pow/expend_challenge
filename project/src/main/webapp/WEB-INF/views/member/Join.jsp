@@ -21,54 +21,14 @@
 <body>
     <main class="flex-shrink-0">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container px-5">
-                <a class="navbar-brand" href="index.html">자린🍊비</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
-                        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
-                                <li><a class="dropdown-item" href="blog-home.html">Blog Home</a></li>
-                                <li><a class="dropdown-item" href="blog-post.html">Blog Post</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
-                                <li><a class="dropdown-item" href="portfolio-overview.html">Portfolio Overview</a></li>
-                                <li><a class="dropdown-item" href="portfolio-item.html">Portfolio Item</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <c:import url="../rayout/nav.jsp" />
+
         <!-- Page content-->
         <!-- Section: Design Block -->
         <section class="background-radial-gradient overflow-hidden">
             <style>
                 .background-radial-gradient {
-                    background-color: rgb(242,121,53);
-                    background-image:
-                    /*radial-gradient(650px circle at 0% 0%,*/
-                    /*hsl(218, 41%, 35%) 15%,*/
-                    /*hsl(218, 41%, 30%) 35%,*/
-                    /*hsl(218, 41%, 20%) 75%,*/
-                    /*hsl(218, 41%, 19%) 80%,*/
-                    /*transparent 100%),*/
-                    /*radial-gradient(1250px circle at 100% 100%,*/
-                    /*        hsl(218, 41%, 45%) 15%,*/
-                    /*        hsl(218, 41%, 30%) 35%,*/
-                    /*        hsl(218, 41%, 20%) 75%,*/
-                    /*        hsl(218, 41%, 19%) 80%,*/
-                    /*        transparent 100%);*/
+                    background-color: #FE863A;
                     url("image/orange-background.jpg");
                 }
 
@@ -121,21 +81,21 @@
                                     <div class="row">
                                         <div class="col-md-6 mb-4">
                                             <div class="form-outline">
-                                                <input type="text" id="form3Example1" class="form-control" />
-                                                <label class="form-label" for="form3Example1">First name</label>
+                                                <input type="text" id="memName" name="memName" class="form-control" />
+                                                <label class="form-label" for="form3Example1">이름</label>
                                             </div>
                                         </div>
                                         <div class="col-md-6 mb-4">
                                             <div class="form-outline">
                                                 <input type="text" id="form3Example2" class="form-control" />
-                                                <label class="form-label" for="form3Example2">Last name</label>
+                                                <label class="form-label" for="form3Example2">성</label>
                                             </div>
                                         </div>
                                     </div>
 
                                     <!-- Email input -->
                                     <div class="form-outline mb-4">
-                                        <input type="email" id="form3Example3" class="form-control" />
+                                        <input type="email" id="memId" name="memId" class="form-control" />
                                         <label class="form-label" for="form3Example3">Email address</label>
                                     </div>
 
@@ -152,7 +112,7 @@
 
                                     <!-- Password input -->
                                     <div class="form-outline mb-4">
-                                        <input type="password" id="form3Example4" class="form-control" />
+                                        <input type="password" id="memPw" name="memPw"  class="form-control" />
                                         <label class="form-label" for="form3Example4">Password</label>
                                     </div>
 
@@ -196,6 +156,9 @@
             </div>
         </section>
         <!-- Section: Design Block -->
+
+        <!-- Footer-->
+        <c:import url="../rayout/footer.jsp" />
     </main>
 
 
