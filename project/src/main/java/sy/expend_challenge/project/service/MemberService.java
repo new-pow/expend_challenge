@@ -1,28 +1,26 @@
 package sy.expend_challenge.project.service;
 
-import java.util.ArrayList;
-import java.util.List;
-
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import sy.expend_challenge.project.domain.Member;
-import sy.expend_challenge.project.domain.MemberRepository;
+import sy.expend_challenge.project.repository.MemberRepository;
 
 @Service
 public class MemberService {
 
-	public MemberService(MemberRepository memberRepository) {
-		this.memberRepository = memberRepository;
+	@Autowired
+	MemberRepository memberRepository;
+
+	public void joinMember(Member member) {
+		memberRepository.save(member);
 	}
 	
-	private MemberRepository memberRepository;
-	
-	public List<Member> findAll() {
-		List<Member> members = new ArrayList<>();
-		memberRepository.findAll().forEach(u -> members.add(u));
+	// 로그인
+	public Member loginMember(String memId, String memPw) {
+		Member memberVO = memberRepository.selectMemberInfo(memId, memPw);
 		
-		return members;
-		
+		return memberVO;
 	}
 
 }

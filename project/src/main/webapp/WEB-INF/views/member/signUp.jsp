@@ -116,32 +116,44 @@
 
                         <div class="card bg-glass">
                             <div class="card-body px-4 py-5 px-md-5">
-                                <form action="/complete" method="post">
+                                <!-- <form action="/complete" method="post">
+								    <div>
+								        <label for="memId">아이디: </label>
+								        <input id="memId" name="memId" type="text">
+								    </div>
+								    <div>
+								        <label for="memPw">패스워드: </label>
+								        <input id="memPw" name="memPw" type="password">
+								    </div>
+								    <div>
+								        <label for="memName">닉네임: </label>
+								        <input id="memName" name="memName" type="text">
+								    </div>
+								 
+								    <input type="submit" value="가입하기">
+								</form> -->
+								
+								<form>
                                     <!-- 2 column grid layout with text inputs for the first and last names -->
-                                    <!-- <div class="row">
+                                    <div class="row">
                                         <div class="col-md-6 mb-4">
                                             <div class="form-outline">
-                                                <input type="text" id="memName" class="form-control" />
-                                                <label class="form-label" for="form3Example1">name</label>
+                                                <input type="text" id="memName" name="memName" class="form-control" />
+                                                <label class="form-label" for="form3Example1">이름</label>
                                             </div>
                                         </div>
                                         <div class="col-md-6 mb-4">
                                             <div class="form-outline">
                                                 <input type="text" id="form3Example2" class="form-control" />
-                                                <label class="form-label" for="form3Example2">Last name</label>
+                                                <label class="form-label" for="form3Example2">성</label>
                                             </div>
                                         </div>
-                                    </div> -->
-                                    
-                                    <div class="form-outline mb-4">
-                                        <input type="text" id="memName" class="form-control" />
-                                        <label class="form-label" for="memName">Name</label>
                                     </div>
 
                                     <!-- Email input -->
                                     <div class="form-outline mb-4">
-                                        <input type="email" id="memId" class="form-control" />
-                                        <label class="form-label" for="memId">Email address</label>
+                                        <input type="email" id="memId" name="memId" class="form-control" />
+                                        <label class="form-label" for="form3Example3">Email address</label>
                                     </div>
 
                                     <!-- 인증코드 -->
@@ -157,8 +169,8 @@
 
                                     <!-- Password input -->
                                     <div class="form-outline mb-4">
-                                        <input type="password" id="memPw" class="form-control" />
-                                        <label class="form-label" for="memPw">Password</label>
+                                        <input type="password" id="memPw" name="memPw"  class="form-control" />
+                                        <label class="form-label" for="form3Example4">Password</label>
                                     </div>
 
                                     <!-- Checkbox -->
@@ -170,8 +182,8 @@
                                     </div>
 
                                     <!-- Submit button -->
-                                    <button type="submit" class="btn btn-primary btn-block mb-4" value="가입하기">
-                                        가입하기
+                                    <button type="submit" class="btn btn-primary btn-block mb-4">
+                                        Sign up
                                     </button>
 
                                     <!-- Register buttons -->
@@ -194,6 +206,7 @@
                                         </button>
                                     </div>
                                 </form>
+								
                             </div>
                         </div>
                     </div>
@@ -202,7 +215,14 @@
         </section>
         <!-- Section: Design Block -->
     </main>
-
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 
 </body>
 </html>

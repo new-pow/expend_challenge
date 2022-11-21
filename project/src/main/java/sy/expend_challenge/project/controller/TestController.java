@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import sy.expend_challenge.project.domain.Member;
-import sy.expend_challenge.project.domain.MemberRepository;
+import sy.expend_challenge.project.repository.MemberRepository;
 
 @RestController
 @RequestMapping(value = "/test")
@@ -45,13 +45,13 @@ public class TestController {
 	}
 	
 	// id로 테이블 값 수정
-	@PutMapping(value = "/{memId}")
-	public Member update(@RequestParam String memId, @RequestParam String memPw, @RequestParam String memName) {
-		Optional<Member> member = memberRepository.findById(memId);
-		member.get().setMemPw(memPw);
-		member.get().setMemName(memName);
-		return memberRepository.save(member.get());
-	}
+	/*
+	 * @PutMapping(value = "/{memId}") public Member update(@RequestParam String
+	 * memId, @RequestParam String memPw, @RequestParam String memName) {
+	 * Optional<Member> member = memberRepository.findById(memId);
+	 * member.get().setMemPw(memPw); member.get().setMemName(memName); return
+	 * memberRepository.save(member.get()); }
+	 */
 	
 	// id로 테이블 값 삭제
 	@DeleteMapping

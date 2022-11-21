@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import sy.expend_challenge.project.domain.Member;
-import sy.expend_challenge.project.domain.MemberRepository;
+import sy.expend_challenge.project.repository.MemberRepository;
 
 //@RequestMapping("/member")
 //@RestController
